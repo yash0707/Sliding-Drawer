@@ -33,14 +33,18 @@ public class MainActivity extends AppCompatActivity {
 
                 //Now Play With slideX whatever way u want.
                 content.setTranslationX(slideX);
-                content.setScaleX(1 - slideOffset);
-                content.setScaleY(1 - slideOffset);
 
+//                content.setScaleX(1 - slideOffset);
+//                content.setScaleY(1 - slideOffset);
 
+                //Next Two lines give some effects. Previous Two gives some other effect.
+                content.setScaleX(1 - (slideOffset / scaleFactor));
+                content.setScaleY(1 - (slideOffset / scaleFactor));
 
             }
 
         };
+        drawerLayout.setDrawerElevation(0f);
         drawerLayout.addDrawerListener(actionBarDrawerToggle);
 
     }
