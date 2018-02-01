@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Sliding Drawer</string>
+    <string name="open">\"open Drawer\"</string>
+    <string name="close">close drawer</string>
+</resources>
